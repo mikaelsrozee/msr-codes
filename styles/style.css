@@ -68,8 +68,12 @@ section > header h2 {
     margin: auto auto;
 }
 
-#intro, footer {
+#intro {
     background: #00AEC6;
+}
+
+footer {
+    background: #00ADC5;
 }
 
 #intro h1 {
