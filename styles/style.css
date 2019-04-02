@@ -127,8 +127,8 @@ button:hover {
 }
 
 #about picture > * {
-    width: 40vmin;
-    height: 40vmin;
+    width: 30vmin;
+    height: 30vmin;
 }
 
 #about picture, .text-block {
