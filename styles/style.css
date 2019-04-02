@@ -36,10 +36,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    min-height: 99vh;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
-    padding-bottom: 1vh;
+    padding-bottom: 5vh;
 }
 
 section > header {
