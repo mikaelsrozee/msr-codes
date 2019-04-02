@@ -28,7 +28,6 @@ html {
 }
 
 body, body a {
-    background: #00AEC6;
     color: white;
 }
 
@@ -37,9 +36,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    height: 100vh;
+    min-height: 99vh;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1vh;
 }
 
 section > header {
@@ -66,6 +66,10 @@ section > header h2 {
 
 .section-center > * {
     margin: auto auto;
+}
+
+#intro, footer {
+    background: #00AEC6;
 }
 
 #intro h1 {
@@ -107,6 +111,24 @@ button:hover {
 
 #about {
     background: #EE6C4D;
+}
+
+#about .text-block, #about table {
+    font-size: 150%;
+}
+
+#about table {
+    text-align: left;
+    width: 50vw;
+}
+
+#about picture > * {
+    width: 40vmin;
+    height: 40vmin;
+}
+
+#about picture, .text-block {
+    padding: 2vh 2vw;
 }
 
 #about h2, #projects h2, #contact h2 {
@@ -154,4 +176,8 @@ table {
 
 table * {
     border: 0.1em solid white;
+}
+
+thead {
+    text-align: center;
 }
