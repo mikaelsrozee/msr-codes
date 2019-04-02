@@ -126,11 +126,20 @@ button:hover {
     background: none;
     width: 4em;
     height: 4em;
+    font-size: 3.5vmin;
     color: white;
     border: 0.2em solid white;
     margin-right: 1em;
 }
 
 .socials {
-    padding: 1em;
+    margin: 3vh 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table * {
+    border: 0.1em solid white;
 }
