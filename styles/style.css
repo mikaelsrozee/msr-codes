@@ -100,7 +100,7 @@ section > header h2 {
     animation: rotate90 0.5s forwards;
 }
 
-#intro button:hover {
+button:hover {
     cursor: pointer;
     animation: highlight 0.5s forwards;
 }
@@ -120,4 +120,16 @@ section > header h2 {
 
 #contact {
     background: #27ae60;
+}
+
+footer button {
+    background: none;
+    width: 4em;
+    height: 4em;
+    color: white;
+    border: 0.2em solid white;
+}
+
+footer > .section-center > div {
+    padding: 1em;
 }
