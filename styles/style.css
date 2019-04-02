@@ -52,12 +52,11 @@ section > header h2 {
 
 #intro button {
     border: 0.2em white solid;
-    height: 5vh;
+    padding: 0.5em 0 0.5em 1em;
     background: none;
     color: white;
     font-size: 150%;
     text-align: left;
-    padding-left: 1em;
     font-weight: bold;
 }
 
