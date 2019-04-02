@@ -56,6 +56,18 @@ section > header h2 {
     border-bottom: 0.1em white solid;
 }
 
+.section-center {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.section-center > * {
+    margin: auto auto;
+}
+
 #intro h1 {
     font-size: 400%;
     padding-bottom: 1em;
@@ -93,14 +105,19 @@ section > header h2 {
     animation: highlight 0.5s forwards;
 }
 
-.section-center {
-    display: flex;
-    flex-direction: column;
-    margin: auto auto;
-    max-width: 80vw;
-    text-align: center;
+#about {
+    background: #EE6C4D;
 }
 
-.section-center > * {
-    margin: auto auto;
+#about h2, #projects h2, #contact h2 {
+    color: white;
+    border-color: white;
+}
+
+#projects {
+    background: #8e44ad;
+}
+
+#contact {
+    background: #27ae60;
 }
