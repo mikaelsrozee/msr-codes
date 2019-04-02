@@ -7,9 +7,12 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, body a {
     background: #00AEC6;
-    text-align: justify;
     color: white;
 }
 
@@ -26,6 +29,7 @@ section {
 section > header {
     display: flex;
     padding-top: 1em;
+    text-align: center;
 }
 
 section > header h2 {
@@ -38,16 +42,36 @@ section > header h2 {
 
 #intro h1 {
     font-size: 400%;
+    padding-bottom: 1em;
 }
 
 #intro h2 {
     font-size: 200%;
+    padding-bottom: 1em;
+}
+
+#intro button {
+    border: 0.2em white solid;
+    height: 5vh;
+    background: none;
+    color: white;
+    font-size: 150%;
+    text-align: left;
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+#intro button:after {
+    padding: 0 1em;
+    content: '>';
 }
 
 .section-center {
     display: flex;
     flex-direction: column;
     margin: auto auto;
+    max-width: 80vw;
+    text-align: center;
 }
 
 .section-center > * {
