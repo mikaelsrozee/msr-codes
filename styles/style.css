@@ -70,12 +70,12 @@ section > header h2 {
 
 #intro h1 {
     font-size: 400%;
-    padding-bottom: 1em;
+    padding-bottom: 3vh;
 }
 
 #intro h2 {
     font-size: 200%;
-    padding-bottom: 1em;
+    padding-bottom: 1vh;
 }
 
 .see-more {
