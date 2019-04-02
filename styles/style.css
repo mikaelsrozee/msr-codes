@@ -78,7 +78,7 @@ section > header h2 {
     padding-bottom: 1em;
 }
 
-#intro button {
+.see-more {
     border: 0.2em white solid;
     padding: 0.5em 1em;
     background: none;
@@ -96,7 +96,7 @@ section > header h2 {
     display: inline-block;
 }
 
-#intro button:hover > i {
+.see-more:hover > i {
     animation: rotate90 0.5s forwards;
 }
 
@@ -122,7 +122,7 @@ button:hover {
     background: #27ae60;
 }
 
-footer button {
+.socials button {
     background: none;
     width: 4em;
     height: 4em;
@@ -131,6 +131,6 @@ footer button {
     margin-right: 1em;
 }
 
-footer > .section-center > div {
+.socials {
     padding: 1em;
 }
