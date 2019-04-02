@@ -1,3 +1,3 @@
-document.querySelector("#intro button").addEventListener("click", function () {
+document.querySelector(".see-more").addEventListener("click", function () {
     document.querySelector("#about").scrollIntoView();
 });
