@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>msr.codes</title>
+
+    <link rel="stylesheet" href="styles/prism.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+
+    <!-- TODO: Favicon in higher quality formats -->
+    <link rel="icon" href="../media/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+    <header>
+        <h1><a href="index.html">msr.codes</a></h1>
+        <nav id="main-nav" aria-label="Main">
+<!--            <ul>-->
+<!--                <li><a href="index.html">Home</a></li>-->
+<!--                <li><a href="litreview.html">Literature Review</a></li>-->
+<!--                <li><a href="worklog.html">Discovery Log</a></li>-->
+<!--                <li><a href="image.html">Cat Picture</a></li>-->
+<!--            </ul>-->
+        </nav>
+    </header>
+
+    <nav id="drawer" aria-label="Drawer" aria-hidden="true">
+        <h1><a href="index.html">msr.codes</a></h1>
+<!--        <ul>-->
+<!--            <li><a href="index.html">Home</a></li>-->
+<!--            <li><a href="litreview.html">Literature Review</a></li>-->
+<!--            <li><a href="worklog.html">Discovery Log</a></li>-->
+<!--            <li><a href="image.html">Cat Picture</a></li>-->
+<!--        </ul>-->
+    </nav>
+
+    <main>
+        <article>
+            <h2 id="intro">Tutorial 0: Creating your development environment</h2>
+            <p>Welcome to the first of my modding tutorials for Minecraft 1.12.2. Currently, whilst Minecraft 1.13 and 1.14 are both released, Forge lags behind and so the modding community is still using 1.12.</p>
+            <p>In order to create Minecraft mods efficiently, it is important to set up your development environment correctly. Below, I will go through all required downloads, installs as well as how to set up your file structure correctly.</p>
+            <section>
+                <h3 id="requirements">Part 1: Requirements</h3>
+                <h4>Java Development Kit</h4>
+                <p>You're studying &lt;insert computing degree here&gt;, figure it out. Although, I will note that you should be using Java 8. Older versions are okay (unless it is more ancient than my nan) but newer versions are not.</p>
+                <h4>IntelliJ IDEA</h4>
+                <p>Almost Minecraft mods are written using IntelliJ IDEA or Eclipse as the build tool that we use, Gradle, is able to automatically setup development environments for those IDEs. Get it for free as a student at <a href="https://jetbrains.com/student">jetbrains.com/student</a></p>
+                <h4>Minecraft Forge</h4>
+                <p>Minecraft Forge is *the* Minecraft modding API. Other APIs do not exist. If you see something claiming to be a Minecraft modding API, ignore it. It doesn't exist.</p>
+                <p>To create our mod, we need to grab the latest version of the Minecraft Forge src. Head over to the <a href="https://files.minecraftforge.net/">Minecraft Forge downloads page</a> and grab the latest version of the Forge MDK (Mod Development Kit). At the time of writing this is 14.23.5.2847.</p>
+                <p>But where are we going to extract that zip file? Fear not! NEXT SECTION!</p>
+            </section>
+            <section>
+                <h3 id="file-structure">Installing Forge</h3>
+                <p>Putting things in the wrong place is just going to make your life difficult. It's like doing column addition and putting all the digits on a diagonal slant and then wondering why 20+25=270.</p>
+                <p>If you haven't already, create a folder somewhere on your hard drive (or SSD, you saucy nugget) called Development. Ideally this is in your root folder for easy access via terminal.</p>
+                <p>Inside that folder, create another folder which is named after your mod (this is the point where you could create a GitHub repository).</p>
+                <p>Inside of the mod folder, extract the following from the Forge MDK zip:</p>
+                <ul>
+                    <li>/gradle</li>
+                    <li>.gitignore</li>
+                    <li>build.gradle</li>
+                    <li>gradle.properties</li>
+                    <li>gradlew</li>
+                    <li>gradlew.bat</li>
+                </ul>
+                <p>To install Forge, open a terminal of your choosing and type the command <code class="language-">gradlew setupDecompWorkspace idea</code></p>
+                <p>This will download all the stuff you need and create a handy little .ipr file that you can open in IntelliJ to open everything you need.</p>
+                <p>But until the next tutorial (which I'm doing in person, hi)... TTFN</p>
+            </section>
+        </article>
+
+        <script src="scripts/references.js"></script>
+    </main>
+
+    <footer>
+        <p>Follow me on Twitter <a href="https://twitter.com/_mikaelsrozee">@_mikaelsrozee</a></p>
+    </footer>
+</body>
+</html>
